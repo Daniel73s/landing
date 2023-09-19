@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Lato', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Nunito', sans-serif;
+}
+.contenedor{
+    width: 100%;
+    border: 1px solid rgb(88, 13, 13);
+}
+.icon-size{
+    font-size: 20px;
+}
+.color-html{
+    color: #e34c26;
+}
+.color-css{
+    color: #264de4;
+}
+.color-javascript{
+    color: #F0DB4F;
+}
+.img-web{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.margin-bottom-personalizado{
+    margin-bottom: 5rem;
+}
+.soluciones{
+    width: 60%;
+}
+
+/* desktop */
+@media screen and (min-width:1024px){
+
+}
+
+/* tablet */
+@media screen and (max-width:1050px){
+    .img{
+        display: none;
+      }
+      .header{
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+      }
+      .soluciones{
+        width: 90%;
+      }
+}
+
+/* @media only screen and (max-width: 600px) {
+   .img{
+      display: none;
+    }
+  } */

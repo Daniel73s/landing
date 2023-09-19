@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item">
+                    item1
+                </a>
+                <a class="navbar-item">
+                    item2
+                </a>
+                <a class="navbar-item">
+                    item3
+                </a>
+                <a class="navbar-item">
+                    item4
+                </a>
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                            <strong>Call to Accion</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <header class="container">
+
+        <div class="is-flex is-flex-direction-row is-align-items-center header" style="gap: 5rem;">
+            <div class="is-flex-grow-1">
+                <h1 class="is-size-3 mb-2 has-text-weight-bold">
+                    ENCABEZADO SOBRE LA TRANSFORMACION QUE BRINDA TU PRODUCTO
+                </h1>
+                <P class="mb-2">Parrafo pequeño para complementar la informacion del encabezado</P>
+                <button class="button is-primary mt-2">Llamado a la accion especifico</button>
+            </div>
+            <div class="is-flex-grow-1 img">
+                <img src="assets/header.jpg" alt="imagen header" id="img-header" class="image" width="800" height="800">
+            </div>
+        </div>
+    </header>
+    <div class="container margin-bottom-personalizado">
+        <div class="is-flex is-justify-content-space-around is-flex-wrap-wrap m-3" style="gap:2rem;">
+            <span class="icon-text">
+                <span class="icon">
+                    <i class="fab fa-html5 icon-size color-html"></i>
+                </span>
+                <span>HTML</span>
+            </span>
+            <span class="icon-text">
+                <span class="icon">
+                    <i class="fab fa-css3-alt icon-size color-css"></i>
+                </span>
+                <span>CSS</span>
+            </span>
+            <span class="icon-text">
+                <span class="icon">
+                    <i class="fab fa-js-square icon-size color-javascript"></i>
+                </span>
+                <span>JAVASCRIPT</span>
+            </span>
+        </div>
+    </div>
+    <br>
+    <main class="container">
+        <section class="columns margin-bottom-personalizado">
+            <div class="column has-text-centered">
+                <img src="assets/imagen1.jpg" alt="" class="is-pulled-center" style="width:90%; height: 300px;">
+            </div>
+            <div class="column m-4">
+                <b class="is-size-3 has-text-left-desktop-only">Encabezado que enfatiza en algun problema que tus
+                    clientes potenciales tengan</b>
+                <p class="is-size-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere placeat harum
+                    temporibus molestias
+                    deleniti ex, exercitationem dolores soluta vel porro cumque dignissimos molestiae neque quia earum!
+                    Distinctio sit aspernatur sint!</p>
+            </div>
+        </section>
+        <section>
+            <div class="container has-text-centered soluciones">
+                <b class="is-size-3">Introduce la solucion</b>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sed amet consequuntur quibusdam veniam
+                    placeat nostrum, labore maxime molestias pariatur incidunt libero explicabo alias soluta iusto
+                    eveniet, consequatur asperiores animi?
+                </p>
+
+
+                <!-- slides -->
+
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="assets/solucion1.png" alt="" class="img-web">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/solucion2.jpg" alt="" class="img-web">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/solucion3.png" alt="" class="img-web">
+                        </div>
+                        ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
